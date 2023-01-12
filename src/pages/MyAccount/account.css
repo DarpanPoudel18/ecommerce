@@ -1,0 +1,192 @@
+.account{
+    top:-80px;
+    width:85%;
+    margin:100px;
+    height:500px;
+    display:flex;
+    place-content: center;
+    position:relative;
+
+}
+
+
+
+
+.ant-modal-content{
+-webkit-border-radius: 40px 40px 40px 40px;
+-moz-border-radius: 40px 40px 40px 40px;
+border-radius: 40px 40px 40px 40px;
+
+}
+
+.continue-btn{
+    background: #fb641b;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    border: none;
+    color: #fff;
+}
+
+.header{
+    height:400px;
+    width:100%;
+    color:#fff;
+    font-size:15px;
+}
+
+.sider{
+    background-color:#2874f0;
+    height:400px;
+    width:100%;
+    color:#fff;
+    font-size:15px;
+}
+
+.sider-info{
+    top:30px;
+    position:relative;
+    font-family: 'Courier New', Courier, monospace;
+    left:4px;
+    font-size: 16px;
+}
+
+.content{
+    margin:2px;
+    top:5px;
+    position:relative;
+}
+
+.content-data{
+    color:gray;
+    font-weight: lighter;
+    left:40px;
+    position:relative;
+}
+
+.content-inputfield{
+    width:70%;
+    left:30px;
+}
+
+.content-agreement{
+    top:20px;
+    position:relative;
+    height:150px;
+}
+
+.content-agreement > p{
+    left:6px;
+    position:relative;
+}
+
+.content-login{
+    left:60px;
+    background-color: #fb641b;
+    color:white;
+    font-family: inherit;
+    font-size: 15px;
+}
+.content-login:hover{
+   background-color: black;
+}
+
+
+/************************************ Signup ***************************************/
+.signup{
+    left:157px;
+    position:relative;
+}
+
+
+
+/*********************************** LOGIN********************************************/
+.welcome-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-weight:700;
+    left:29px;
+    position:relative;
+}
+
+.login-header{
+    /* border:2px solid red; */
+    height:115px;
+    display: flex;
+    place-content: center;
+}
+
+.avatar{
+    height:50px;
+    top:70px;
+    left:-50px;
+    position:relative;
+}
+
+.Login{
+    top:50px;
+    height:500px;
+    width:350px;
+    left:-110px;
+    position:relative;
+   -webkit-box-shadow: 3px 3px 15px 5px #B3B3B3; 
+    box-shadow: 3px 3px 15px 5px #B3B3B3;
+    -webkit-border-radius: 40px 40px 40px 40px;
+   -moz-border-radius: 40px 40px 40px 40px;
+   border-radius: 40px 40px 40px 40px;
+    
+}
+
+.login-form{
+    width:90%;
+    left:17px;
+    bottom:70px;
+    position:absolute;
+  
+}
+
+.login-form-btn{
+   display:flex;
+   place-content: center;
+}
+
+.login-form-button{
+    width:40%;
+}
+
+.social-media-icons{
+    height:60px;
+    display:flex;
+    align-items: center;
+    place-content: center;
+    bottom:-25px;
+    position:relative;
+}
+
+.space{
+    bottom:0;
+    position:absolute;
+}
+
+@media screen and (max-width: 720px){
+.account{
+    width:60rem;
+    height:60rem;
+}
+
+.welcome-text{
+   height:25px;
+ }
+
+ .avatar{
+     left:-60px;
+ }
+
+ .content-login{
+     position: relative;
+     left:0;
+ }
+.ant-modal-content{
+    width:40rem;
+    left:-60px;
+}
+
+}

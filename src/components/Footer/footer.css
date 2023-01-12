@@ -1,0 +1,38 @@
+.footer{
+    background-color:  #0071dc;
+    padding: 22px 0 30px;
+    color: #fff;
+    height:80px;
+    width:100%;
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+    background-color: #25837e !important;
+ }
+
+
+
+
+.footer-social-media{
+    display:flex;
+    flex-direction: column;
+    height:160px;
+    align-items: center;
+    place-content: center;
+    bottom:0;
+    position:relative;
+    cursor:pointer;
+  }
+
+
+  /*******************************************************************************/
+  @media screen and (max-width: 720px){
+
+    
+    .footer{
+       bottom:-200px;
+      position:relative;
+      width:70rem;
+  }
+    
+  }

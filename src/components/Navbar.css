@@ -1,0 +1,146 @@
+
+.navbar {
+    width: 100%;
+    height: 90px;
+    color:white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #007185;
+  }
+  
+
+
+/************************************** logo *********************************/
+
+
+
+
+
+.cart-logo{
+    top:4px;
+    font-size:28px;
+    color:black;
+    position:relative;
+
+}
+
+.home-logo{
+    color:black;
+
+}
+
+.account-logo{
+    color:orange;
+    background-color: black;
+}
+
+
+
+
+/*******************************************************************************/
+  .links {
+    margin-top: 4px;
+    margin-right: 80px;
+    display: flex;
+    align-items: center;
+    background-color:white;
+    border-top-right-radius: 10%;
+  }
+  
+  .links a {
+    margin-left: 20px;
+    font-size: 25px;
+    font-family: Bogle,Helvetica Neue,Helvetica,Arial,sans-serif;
+  }
+
+
+
+  .searchbar{
+    left:300px; 
+    top:22px;
+    position:absolute;
+    padding:8px;
+    width:50%;
+    font-size: 15px;
+   }
+
+  .vector-img{
+    height:10%;
+    right:0;
+    position:absolute;
+  }
+
+  .logo{
+    height:50px;
+    width:150px;
+    left:0;
+    position:absolute;
+  }
+
+  /* .login{
+    height:50px;
+    width:100px;
+    right:190px;
+    position:absolute;
+    border-radius:10%;
+    cursor:pointer;
+   } */
+
+  .ACCOUNT-BTN{
+    top:30px;
+    height:34px;
+    width:105px;
+    right:190px;
+    cursor:pointer;
+    position:absolute;
+    border-top-left-radius: 8%;
+    border:2px solid black;
+    color:white;
+    background-color:black;
+    
+  }
+ 
+
+ /*******************************************************/
+ @media screen and (max-width: 720px) {
+  .navbar {
+    width:70rem;
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    
+  }
+
+
+  .searchbar{
+    position:relative;
+    left:-100px;
+    top:0;
+    width:25rem;
+  }
+
+  .links{
+    width:14rem;
+    right:0;
+    position:relative;
+   
+  }
+
+  .ACCOUNT-BTN{
+    position:relative;
+    left:-20px;
+    top:-1px;
+    height:50px;
+  }
+
+  .vector-img{
+    position:relative;
+  right:54rem;
+    width:50px;
+  }
+ } 
+  
+
+  
+  
