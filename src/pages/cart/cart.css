@@ -24,7 +24,6 @@
     top:10px;
     position:relative;
     margin:25px;
-  
   }
 
   .checkout{
@@ -48,8 +47,10 @@
   }
   
   .cartItem .description {
-    width: 100%;
+    width: 50%;
+    margin-left: 30px;
     font-size: 30px;
+  
   }
   
   .countHandler input {

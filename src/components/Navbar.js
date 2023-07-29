@@ -20,9 +20,9 @@ const Navbar = () => {
   return (
     
        <div className="navbar">
-   
+        
             <Space>
-           <Search placeholder="Search for products, brands, shops" 
+           <Search placeholder="Search for products, brands, shops...." 
            onChange={onSearch} enterButton
            className="searchbar" />
           </Space>
