@@ -22,7 +22,7 @@ const Navbar = () => {
        <div className="navbar">
         
             <Space>
-           <Search placeholder="Search for products, brands and shops!!!!!!!!!!" 
+           <Search placeholder="Search for products, brands and shops." 
            onChange={onSearch} enterButton
            className="searchbar" />
           </Space>
