@@ -70,15 +70,29 @@
     cursor: pointer;
   }
 
-  @media screen and (max-width: 720px){
+  @media screen and (max-width: 600px){
       .cart{
-        width:70rem;
+        /* width:70rem; */
+       border:2px solid red;
+       display:flex;
+       width:100%;
+       height:100%;
+       gap:2rem;
+       position: relative;
       }
 
-      .description{
-        display: flex;
-        flex-direction: column;
-        place-items: center;
-     
+      .cartItems{
+        border:2px solid green;
+        width:50%;
+        /* margin-top:20px; */
+        /* display:flex;
+        flex-direction: column; */
       }
+
+      .cartItem{
+        border:2px solid blue;
+        width:auto;
+      }
+
+    
   }

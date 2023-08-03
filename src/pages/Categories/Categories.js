@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom'
 const Categories = () => {
   return (
     <div className="categories">
+ 
      <div className="cat-links">
      <Link to="/electronics">Electronics</Link>
      <Link to="/homeandliving">Home & Living</Link>

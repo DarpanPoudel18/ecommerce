@@ -4,9 +4,10 @@
     height: 90px;
     color:white;
     display: flex;
-    justify-content: flex-end;
+    justify-content:space-around;
     align-items: center;
     background-color: #007185;
+  
   }
   
 
@@ -18,64 +19,104 @@
 
 
 .cart-logo{
-    top:4px;
-    font-size:28px;
+    /* top:4px; */
+    /* font-size:28px; */
     color:black;
-    position:relative;
-
+    /* position:relative; */
+  
 }
 
 .home-logo{
     color:black;
-
+  
 }
 
 .account-logo{
     color:orange;
     background-color: black;
+
+}
+
+.vector-logo{
+  height:6%;
+  right:0;
+  position:absolute;
 }
 
 
-
-
 /*******************************************************************************/
-  .links {
+  /* .links {
     margin-top: 4px;
     margin-right: 80px;
     display: flex;
     align-items: center;
     background-color:white;
     border-top-right-radius: 10%;
+  } */
+
+  .links {
+    /* margin-top: 4px;
+    margin-right: 80px; */
+    display: flex;
+    gap:1.5vw;
+ justify-content: center;
+    /* justify-content: space-around; */
+ 
+    /* align-items: center;
+    background-color:white;
+    border-top-right-radius: 10%; */
+    /* border:2px solid red; */
+
+    border:2px solid red;
   }
   
-  .links a {
+  /* .links a {
     margin-left: 20px;
     font-size: 25px;
     font-family: Bogle,Helvetica Neue,Helvetica,Arial,sans-serif;
+    
+  } */
+
+  .links a {
+    /* margin-left: 20px; */
+    /* font-size: 25px; */
+    font-size: 25px;
+    font-size: 1.5rem;
+    font-family: Bogle,Helvetica Neue,Helvetica,Arial,sans-serif;
+ 
   }
 
 
 
-  .searchbar{
+  /* .searchbar{
     left:300px; 
     top:22px;
     position:absolute;
     padding:8px;
     width:50%;
     font-size: 15px;
+   } */
+
+
+   .searchbar{
+    /* left:300px; 
+    top:22px; */
+     
+    /* padding:8px; */
+    width:50vw;
+    font-size: 15px;
    }
 
-  .vector-img{
-    height:10%;
-    right:0;
-    position:absolute;
-  }
+
+
+
 
   .logo{
     height:50px;
     width:150px;
     left:0;
     position:absolute;
+  
   }
 
   /* .login{
@@ -87,7 +128,7 @@
     cursor:pointer;
    } */
 
-  .ACCOUNT-BTN{
+  /* .ACCOUNT-BTN{
     top:30px;
     height:34px;
     width:105px;
@@ -99,11 +140,26 @@
     color:white;
     background-color:black;
     
+  } */
+
+
+
+  .ACCOUNT-BTN{
+    /* top:30px; */
+    /* height:34px;
+    width:105px; */
+/* right:190px; */
+    cursor:pointer;
+    /* position:absolute; */
+    /* border-top-left-radius: 8%; */
+     color:white;
+    background-color:black;
+    border:2px solid black;
   }
  
 
  /*******************************************************/
- @media screen and (max-width: 720px) {
+ /* @media screen and (max-width: 720px) {
   .navbar {
     width:70rem;
     position: relative;
@@ -139,8 +195,26 @@
   right:54rem;
     width:50px;
   }
- } 
+ }  */
   
 
+@media(max-width:800px){
+  .vector-logo{
+    display:none;
+  }
+}
+
+@media(max-width:600px){
+.navbar{
+ 
+}
+
+.links{
+  display:flex;
+  /* border:2px solid black; */
+}
+
+
+}
   
   

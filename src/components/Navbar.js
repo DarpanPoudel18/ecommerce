@@ -10,6 +10,8 @@ import Account from '../pages/MyAccount/Account'
 
 
 
+
+
 const Navbar = () => {
   const { Search } = Input;
   const[search,setSearch] = useState('')
@@ -28,6 +30,7 @@ const Navbar = () => {
           </Space>
 
 
+         
 
            <div className="links">
            <Link to="/account">
@@ -42,7 +45,7 @@ const Navbar = () => {
            <ShoppingCart className='cart-logo'/>
           </Link>
 
-        <img src={vector} alt="img" className="vector-img"/>
+          <img src={vector} alt="img" className="vector-logo"/>
       </div>
 
           
@@ -52,3 +55,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+
