@@ -1,9 +1,7 @@
 import React,{useState} from 'react'
 import signIn from '../../images/signIn.png'
 import {useNavigate} from 'react-router-dom'
-
 import './account.css'
-
 import { Button, Space, Modal,  Layout,Input } from 'antd';
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -17,20 +15,15 @@ const Signup = () => {
       setOpen(true);
     };
     const handleOk = (e) => {
-      console.log(e);
       setOpen(false);
     };
     const handleCancel = (e) => {
-      console.log(e);
       setOpen(false);
     };
   
   return (
     <div className="signup">
-    
-    
-    
-    
+     
     <Button type="primary" onClick={showModal}>
         New customer? sign up
       </Button>
@@ -48,7 +41,7 @@ const Signup = () => {
       <Sider className="sider">
           <img src={signIn} alt="img"/>
           <div className="sider-info">
-          Darpan introduces you the first online sale of jhapa!
+          We introduce you the first online sale of jhapa!
           Sign up with your mobile number to get started.
           </div>
       </Sider>

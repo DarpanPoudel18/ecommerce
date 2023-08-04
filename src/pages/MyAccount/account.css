@@ -1,4 +1,4 @@
-.account{
+/* .account{
     top:-80px;
     width:85%;
     margin:100px;
@@ -6,9 +6,19 @@
     display:flex;
     place-content: center;
     position:relative;
+    border:2px solid red;
+} */
 
+
+.account{
+display:flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ flex-wrap: wrap;
+ height:100%;
+ padding:2rem 0;
 }
-
 
 
 
@@ -91,37 +101,59 @@ border-radius: 40px 40px 40px 40px;
 
 
 /************************************ Signup ***************************************/
-.signup{
+/* .signup{
     left:157px;
     position:relative;
-}
+} */
+
+
 
 
 
 /*********************************** LOGIN********************************************/
 .welcome-text{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    letter-spacing: 2px;
-    font-weight:700;
-    left:29px;
-    position:relative;
+    letter-spacing: 1px;
+    /* font-weight:700; */
+    /* left:29px; */
+    /* position:relative; */
 }
 
-.login-header{
-    /* border:2px solid red; */
+/* .login-header{
     height:115px;
     display: flex;
     place-content: center;
+    border:2px solid red;
+} */
+
+
+.login-header{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+    /* border:2px solid red; */
+}
+
+
+
+
+.avatar{
+    /* height:50px;
+    top:70px;
+    left:-50px;
+    position:relative; */
 }
 
 .avatar{
-    height:50px;
-    top:70px;
-    left:-50px;
-    position:relative;
+    width:10%;
 }
 
-.Login{
+
+
+
+/* .Login{
     top:50px;
     height:500px;
     width:350px;
@@ -133,52 +165,91 @@ border-radius: 40px 40px 40px 40px;
    -moz-border-radius: 40px 40px 40px 40px;
    border-radius: 40px 40px 40px 40px;
     
+} */
+
+
+.Login{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   flex-wrap: wrap;
+    margin-top:40px;
+    width:30%;
+    /* border:5px solid purple */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
 }
 
-.login-form{
+
+
+/* .login-form{
     width:90%;
     left:17px;
     bottom:70px;
     position:absolute;
-  
+    border:2px solid yellow;
+} */
+
+
+
+.login-form{
+    /* width:90%; */
+    /* left:17px; */
+     /* border:2px solid green; */
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 }
 
+
+
+
+
 .login-form-btn{
-   display:flex;
-   place-content: center;
+    display:flex;
+    justify-content: center;
 }
 
 .login-form-button{
-    width:40%;
-}
+    width:100%;
+} 
+
 
 .social-media-icons{
     height:60px;
+    padding:5px 0;
     display:flex;
+   justify-content: center;
     align-items: center;
-    place-content: center;
-    bottom:-25px;
-    position:relative;
+    /* bottom:-25px; */
+    /* position:relative; */
+    /* border:2px solid red; */
 }
+
+
 
 .space{
     bottom:0;
     position:absolute;
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 600px){
 .account{
-    width:60rem;
-    height:60rem;
+    /* width:60rem;
+    height:60rem; */
+    /* height:100%;
+    width:100%; */
+  height:100%;
 }
 
-.welcome-text{
+/* .welcome-text{
    height:25px;
- }
+ } */
 
- .avatar{
+ /* .avatar{
      left:-60px;
- }
+ } */
 
  .content-login{
      position: relative;
@@ -188,5 +259,20 @@ border-radius: 40px 40px 40px 40px;
     width:40rem;
     left:-60px;
 }
+
+
+.Login{
+    width:100%;
+    gap:2rem;
+}
+
+.login-form{
+    width:100%;
+   
+}
+
+/* .Login{
+    width:100%;
+} */
 
 }

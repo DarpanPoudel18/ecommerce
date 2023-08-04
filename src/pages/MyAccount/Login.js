@@ -74,8 +74,8 @@ const Login = () => {
         </div>
 
         <div className='social-media-icons'>
-        <h5 style={{top:'-30px',position:'absolute', 
-        color:'gray',fontSize:'15px'}}>or Sign up using </h5>
+        <h5 style={{marginTop:'10px',position:'',color:'gray',fontSize:'15px'}}>or signup using</h5>
+
         <Space className="space">
            <GoogleCircleFilled style={{ fontSize: '26px', color: '#fb641b' }} />
            <IconFont type="icon-facebook" style={{ fontSize: '26px', color: 'blue' }} />
@@ -96,3 +96,6 @@ const Login = () => {
  }
 
  export default Login 
+
+//  <h5 style={{ 
+//         }}>or Sign up using </h5>
