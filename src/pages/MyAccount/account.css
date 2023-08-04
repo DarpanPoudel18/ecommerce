@@ -1,14 +1,3 @@
-/* .account{
-    top:-80px;
-    width:85%;
-    margin:100px;
-    height:500px;
-    display:flex;
-    place-content: center;
-    position:relative;
-    border:2px solid red;
-} */
-
 
 .account{
 display:flex;
@@ -48,12 +37,6 @@ border-radius: 40px 40px 40px 40px;
 
 
 .sider{
-    /* background-color:#2874f0;
-    height:400px;
-    width:100%;
-    color:#fff;
-    font-size:15px; */
-   
     background-color:#2874f0;
     display:flex;
     flex-direction: column;
@@ -64,8 +47,6 @@ border-radius: 40px 40px 40px 40px;
 }
 
 .sider-info{
-    /* top:30px;
-    position:relative; */
     font-family: 'Courier New', Courier, monospace;
     /* left:4px; */
     font-size: 16px;
@@ -74,19 +55,11 @@ border-radius: 40px 40px 40px 40px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-   
     width:90%;
     margin-left:12px;
     padding:0 2rem;
     font-weight:bold;
 }
-
-/* .content{
-    margin:2px;
-    top:5px;
-    position:relative;
-} */
-
 
 .content{
    /* border:2px solid blue; */
@@ -100,64 +73,19 @@ border-radius: 40px 40px 40px 40px;
 }
 
 
-/* .content-data{
-    color:gray;
-    font-weight: lighter;
-    left:40px;
-    position:relative;
-} */
-
-.content-data{
-  
-  
-}
-
-
-/* .content-inputfield{
-    width:70%;
-    left:30px;
-} */
-
-.content-inputfield{
-  
-}
-
-/* .content-agreement{
-    top:20px;
-    position:relative;
-    height:150px;
-} */
 
 .content-agreement{
-    /* top:20px;
-    position:relative;
-    height:150px; */
- 
     display:flex;
     flex-direction: column;
     padding:0 2%;
     gap:5px;
-  
 }
-
-/* .content-agreement > p{
-    left:6px;
-    position:relative;
-} */
 
 .content-agreement > p{
    font-weight: 600;
   text-align: center;
 }
 
-
-/* .content-login{
-    left:60px;
-    background-color: #fb641b;
-    color:white;
-    font-family: inherit;
-    font-size: 15px;
-} */
 
 .content-login{
     background-color: #fb641b;
@@ -183,18 +111,8 @@ border-radius: 40px 40px 40px 40px;
 .welcome-text{
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 1px;
-    /* font-weight:700; */
-    /* left:29px; */
-    /* position:relative; */
+   
 }
-
-/* .login-header{
-    height:115px;
-    display: flex;
-    place-content: center;
-    border:2px solid red;
-} */
-
 
 .login-header{
      display: flex;
@@ -207,34 +125,9 @@ border-radius: 40px 40px 40px 40px;
 
 
 
-
-.avatar{
-    /* height:50px;
-    top:70px;
-    left:-50px;
-    position:relative; */
-}
-
 .avatar{
     width:10%;
 }
-
-
-
-
-/* .Login{
-    top:50px;
-    height:500px;
-    width:350px;
-    left:-110px;
-    position:relative;
-   -webkit-box-shadow: 3px 3px 15px 5px #B3B3B3; 
-    box-shadow: 3px 3px 15px 5px #B3B3B3;
-    -webkit-border-radius: 40px 40px 40px 40px;
-   -moz-border-radius: 40px 40px 40px 40px;
-   border-radius: 40px 40px 40px 40px;
-    
-} */
 
 
 .Login{
@@ -248,16 +141,6 @@ border-radius: 40px 40px 40px 40px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
 }
-
-
-
-/* .login-form{
-    width:90%;
-    left:17px;
-    bottom:70px;
-    position:absolute;
-    border:2px solid yellow;
-} */
 
 
 
@@ -291,9 +174,6 @@ border-radius: 40px 40px 40px 40px;
     display:flex;
    justify-content: center;
     align-items: center;
-    /* bottom:-25px; */
-    /* position:relative; */
-    /* border:2px solid red; */
 }
 
 
@@ -311,14 +191,6 @@ border-radius: 40px 40px 40px 40px;
     width:100%; */
   height:100%;
 }
-
-/* .welcome-text{
-   height:25px;
- } */
-
- /* .avatar{
-     left:-60px;
- } */
 
  .content-login{
      position: relative;
@@ -340,9 +212,6 @@ border-radius: 40px 40px 40px 40px;
    
 }
 
-/* .Login{
-    width:100%;
-} */
 
 .signup{
     display:flex;
@@ -360,12 +229,6 @@ border-radius: 40px 40px 40px 40px;
 
 
 .content{
-    /* border:2px solid blue;
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; */
     font-size:3.5vw;
  }
 
