@@ -35,14 +35,16 @@ const Signup = () => {
         cancelButtonProps={{ disabled: true }}
         className="ant-modal-content"
       >
-        <h2 style={{textAlign:'center',fontFamily:'monospace'}}>Welcome to DARPAN store</h2>
+        <h2 style={{textAlign:'center',fontFamily:'monospace'}}>Welcome to <span className="darpan">DARPAN</span> store</h2>
 
     <Layout>
       <Sider className="sider">
           <img src={signIn} alt="img"/>
           <div className="sider-info">
-          We introduce you the first online sale of jhapa!
-          Sign up with your mobile number to get started.
+         <p>
+         We introduce you the first online sale of jhapa!
+         Sign up with your mobile number to get started.
+         </p>
           </div>
       </Sider>
 
