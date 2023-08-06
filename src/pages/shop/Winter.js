@@ -39,8 +39,8 @@ const Winter = () => {
     <div>
 
                 {contextHolder}
-            <h1 className="winter-title" >Winter Essentials</h1>
-            <div className="shopmore">
+            <span className="winter-title" >Winter Essentials</span>
+            <div className="winter-shopmore">
             <button className="shop-btn" onClick={()=>navigate("/topbrands")}>SHOP MORE</button>
             </div>
          <div className="winter">

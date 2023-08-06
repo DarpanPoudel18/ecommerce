@@ -34,18 +34,18 @@ const Topdeals = () => {
 
 
   return (
-    <div>    {contextHolder}
-            <span className="topdeals-title" >Top Deals</span>
+    <div>          {contextHolder}
+       <span className="topdeals-title" >Top Deals</span>
             <div className="shopmore">
-            <button className="shop-btn" onClick={()=>navigate("/topbrands")}>SHOP MORE</button>
+               <button className="shop-btn" onClick={()=>navigate("/topbrands")}>SHOP MORE</button>
+              
             </div>
          <div className="topdeals">
            {state.map((data)=>{
-                
-            return(
+             return(
             <div className="topdeals-item">
                 <img src={data.productImage} alt="img"  />
-            <Button type="primary"
+            <Button type="primary" className="addToCart"
             onClick={()=>{addToCart(data.id)
                 openNotificationWithIcon('success') }} >ADD To Cart</Button>
 

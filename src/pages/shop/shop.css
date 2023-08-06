@@ -2,6 +2,7 @@
   /* border:2px solid red; */
   display:flex;
   flex-direction: column;
+  /* background-color: #f85606; */
  }
  
  
@@ -53,50 +54,48 @@
     cursor: pointer;
   }
   
-  .addToCartBttn {
-    background-color: transparent;
-    border: 2px solid rgb(19, 19, 19);
-    min-width: 100px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+ 
+  .addToCart{
     border-radius: 15px;
-  }
+   }
   
-  .addToCartBttn:hover {
-    background-color: rgb(19, 19, 19);
-    color: white;
-    cursor: pointer;
-  } 
+ 
 
   /************************************ Maincarousel *******************************/
+  .main-carousel{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  }
+ 
+ 
   .first-carousel,.second-carousel,.third-carousel,.fourth-carousel,.fifth,.sixth-carousel,
   .seventh-carousel,.eighth-carousel{
-    width: 500px;
-    height: 470px;
-  
+    /* width: 500px;
+    height: 470px; */
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   }
 
   .first-carousel-img,.second-carousel-img,.third-carousel-img,.fourth-carousel-img,
   .fifth-carousel-img,.sixth-carousel-img,.seventh-carousel-img,.eighth-carousel-img{
-    object-fit:cover;
-    height:470px;
+     /* height:470px; */
     width:100%;
+    object-fit:cover;
    }
 
  /********************************** banners ************************************/
 
 .banners{
-  margin-top: 70px;
-  margin-bottom: 70px;
-  border:8px solid red;
-
-}
-
-.main-carousel{
+  margin-top: 30px;
+  /* margin-bottom: 70px; */
+   margin-bottom: 10px;
  
+
 }
+
+
 
 
    /********************************* topdeals ***********************************/
@@ -107,14 +106,20 @@
  width: auto;
  height: auto;
  display: grid;
- grid-template-columns : 1fr 1fr 1fr 1fr 1fr ;
+ /* grid-template-columns : 1fr 1fr 1fr 1fr 1fr ; */
+ grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
  place-content: center;
- 
-
-}
+ grid-template-rows: auto;
+ gap:3px;
+/* border:2px solid red; */
+/* display:flex;
+flex-wrap: wrap;
+border:2px solid red;
+justify-content: space-around; */
+ }
 
 .topdeals-item{
-left:25px;
+/* left:25px;
 height:auto;
 padding:10px;
 width: 200px;
@@ -127,31 +132,47 @@ align-items: center;
 border-radius: 15px;
 -webkit-box-shadow: 3px 3px 15px 5px #B3B3B3; 
 box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+border:2px solid blue; */
 
+
+
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap:2px;
+/* border:2px solid red; */
 }
 
 .topdeals-item img{
   width:100px;
+ 
 }
   
+.topdeals-title{
+  top:-5px;
+ }
 
 .topdeals-title{
-  top:20px;
+  /* top:20px; */
   position:relative;
   font-family: Roboto-Regular;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
   color: #424242;
-  margin-left:30px;
+  margin-left:10px;
   position:relative;
  }
 
-.shopmore{
-  margin-top:2%;
-  left:50px;
-  width:10%;
+ .shopmore{
+  top:-45px;
+  /* left:90%; */
   position:relative;
- }
+  display:flex;
+  justify-content: flex-end;
+ /* border:2px solid red; */
+ 
+}
 
 .shop-btn{
     font-weight: 500;
@@ -173,15 +194,26 @@ box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 
 /**************************** winter essentials ***********************************/
 .winter{
+  /* border:2px solid red; */
   width: auto;
   height: auto;
   display: grid;
   grid-template-columns : 1fr 1fr 1fr 1fr 1fr ;
   place-content: center;
+  /* newly added */
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+
+/* 
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+place-content: center;
+grid-template-rows: auto; */
+
  }
 
  .winter-item{
-  left:25px;
+  /* left:25px;
   width: 200px;
   height:auto;
   margin: 9px;
@@ -193,7 +225,15 @@ box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   align-items: center;
   border-radius: 15px;
   -webkit-box-shadow: 3px 3px 15px 5px #B3B3B3; 
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); */
+  display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 15px;
+-webkit-box-shadow: 3px 3px 15px 5px #B3B3B3; 
+box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+margin:9px;
   }
   
 
@@ -203,21 +243,28 @@ box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     
   
   .winter-title{
+   position: relative;
+    top:25px;
     font-family: Roboto-Regular;
     font-size: 22px;
     font-weight: bold;
     color: #424242;
-    margin-left:30px;
-    position:relative;
-  }
+    margin-left:10px;
+   }
 
 
-  .shopmore{
-    top:-45px;
-    left:90%;
-    position:relative;
-   
-  }
+
+
+
+  
+ .winter-shopmore{
+  top:-15px;
+  /* left:90%; */
+  position:relative;
+  display:flex;
+  justify-content: flex-end;
+ /* border:2px solid blue; */
+ }
   
   .shop-btn{
     font-weight: 500;
@@ -236,44 +283,53 @@ box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 
   /*********************************** Services ************************************/
   .services-card{
-    margin-top: 50px;
+    /* margin-top: 50px;
     height:auto;
     display: grid;
     grid-template-columns : 1fr 1fr 1fr 1fr  ;
     place-items:center;
     justify-items: center;
+    align-items: center; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+  
   }
 
   .service-title{
-    top:-60px;
+    /* top:-60px;
     left:200%;
-    position: relative;
+    position: relative; */
     font-family: Roboto-Regular;
-    font-size: 25px;
+    /* font-size: 25px; */
     font-weight: bold;
     color: #424242;
+  
    }
 
-  .services img{
+  /* .services img{
     width:150px;
-  }
+  } */
 
   .service-img{
-    width:200%;
+    /* width:200%;
     display:flex;
     justify-content: space-around;
     margin-top: 80px;
-    margin-left: 40%;
-
+    margin-left: 40%; */
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 
 
   /*************************************************************************/
   
 
-  @media screen and (max-width: 720px){
-    .shop{
+  @media screen and (max-width: 600px){
+    /* .shop{
        margin-right:-706px;
       position:relative;
     
@@ -288,15 +344,73 @@ box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     .winter-item{
       position:relative;
       left:8px;
-    }
+    } */
+
+
+
+
+
+    /* main carousel */
+    .main-carousel{
+      display:flex;
+      flex-direction: column;
+      width:100%;
+       }
+      
+      
+       .first-carousel,.second-carousel,.third-carousel,.fourth-carousel,.fifth,.sixth-carousel,
+       .seventh-carousel,.eighth-carousel{
+         /* width: 500px;
+         height: 470px; */
+       display:flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       width:100%;
+       }
 
 
 
     .first-carousel-img,.second-carousel-img,.third-carousel-img,.fourth-carousel-img,
     .fifth-carousel-img,.sixth-carousel-img,.seventh-carousel-img,.eighth-carousel-img{
       object-fit:cover;
-      height:470px;
-      width:115%;
+      /* height:470px; */
+      width:100%;
      }
    
+/* 
+top deals */
+
+.topdeals{
+  /* border:2px solid red; */
+  gap:3px;
+}
+
+.topdeals-item{
+  display: flex;
+  flex-direction: column;
+ } 
+
+
+
+ /* winter */
+ .winter{
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns : 1fr 1fr 1fr 1fr 1fr ;
+  place-content: center;
+  /* newly added */
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+ }
+
+
+
+ /* services */
+
+ .service-img{
+  width:90%;
+  gap:20px;
+ }
+
   }
