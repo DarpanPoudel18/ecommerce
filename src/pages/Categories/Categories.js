@@ -1,6 +1,6 @@
 import React from 'react'
 import './categories.css'
-import {Link} from 'react-router-dom'
+import {Link,NavLink} from 'react-router-dom'
 
 
 
@@ -9,12 +9,14 @@ const Categories = () => {
     <div className="categories">
  
      <div className="cat-links">
-     <Link to="/electronics">Electronics</Link>
-     <Link to="/homeandliving">Home & Living</Link>
-     <Link to="/mens">Men's Fashion</Link>
-     <Link to="/sports">Sports</Link>
-     <Link to="/topbrands">Top Brands</Link>
-     <Link to="/womens">Women's Fashion</Link>
+     <NavLink to="/electronics">Electronics</NavLink>
+     <NavLink to="/homeandliving">Home & Living</NavLink>
+     <NavLink to="/mens">Men's Fashion</NavLink>
+     <NavLink to="/sports">Sports</NavLink>
+     <NavLink to="/topbrands">Top brands</NavLink>
+     <NavLink to="/womens">Women's Fashion</NavLink>
+
+    
      {/* <Link to="/test">Test</Link> */}
        </div>
 
