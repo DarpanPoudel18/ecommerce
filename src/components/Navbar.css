@@ -4,7 +4,7 @@
     height: 90px;
     color:white;
     display: flex;
-    justify-content:center;
+    justify-content:space-around;
     align-items: center;
     gap:70px;
     background-color: #007185;
@@ -16,7 +16,13 @@
 /************************************** logo *********************************/
 
 
-
+.dlogo{
+  width:5%;
+ border:2px solid  #007185;     
+ border-radius: 50%;
+cursor:pointer;
+border:6px dotted orange;
+}
 
 
 .cart-logo{
@@ -72,7 +78,7 @@
   
 
  .searchbar{
-    width:40vw;
+    width:34vw;
     font-size: 15px;
   }
 
@@ -86,10 +92,11 @@
 
   
  .ACCOUNT-BTN{
-    cursor:pointer;
+     cursor:pointer;
      color:white;
     background-color:black;
     border:2px solid black;
+    font-size: 15px;
    }
  
 
@@ -107,6 +114,24 @@
   border:2px solid black;
 }
 
+.navbar{
+  height:65px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  gap:15px;
+ 
+}
+
+.dlogo{
+  width:10%;
+  background-color: #007185;
+}
+
+.searchbar{
+  /* width:42vw;
+  font-size: 15px; */
+}
 
 
 }

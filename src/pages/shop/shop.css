@@ -1,5 +1,4 @@
 .shop{
-  /* border:2px solid red; */
   display:flex;
   flex-direction: column;
   /* background-color: #f85606; */
@@ -187,8 +186,12 @@ gap:2px;
     margin-right: 11px;
     margin-top: 13px;
     cursor: pointer;
-    
-}
+  }
+
+  .shop-btn:hover{
+    background-color:#f85606;
+    color:white;
+  }
 
 
 

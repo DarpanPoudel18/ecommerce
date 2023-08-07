@@ -2,6 +2,7 @@ import React,{useState,useContext} from 'react'
 import {Link} from 'react-router-dom'
 import {ShoppingCart} from 'phosphor-react'
 import vector from '../../src/images/vector.svg'
+import d from '../../src/images/d.jpg'
 import './Navbar.css'
 
 import { UserOutlined,HomeOutlined,createFromIconfontCN} from '@ant-design/icons';
@@ -22,7 +23,8 @@ const Navbar = () => {
   return (
     
        <div className="navbar">
-        
+          <img src={d} alt="d-logo" className="dlogo"/> 
+
             <Space>
            <Search placeholder="Search for products, brands and shops." 
            onChange={onSearch} enterButton
