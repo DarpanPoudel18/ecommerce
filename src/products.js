@@ -69,7 +69,7 @@ import product67 from "./banner/mufler.jpg";
 import product68 from "./banner/vest.jpg";
 import product69 from "./banner/newvest.jpg";
 import product70 from "./banner/leather.jpg";
-import product71 from "./banner/track.jpg";
+import product71 from "./banner/track.webp";
 import product72 from "./banner/jumper.jpg";
 import product73 from "./banner/sweatshirt.jpg";
 import product74 from "./banner/sneaker.jpg";

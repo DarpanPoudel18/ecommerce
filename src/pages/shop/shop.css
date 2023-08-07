@@ -2,6 +2,7 @@
   display:flex;
   flex-direction: column;
   /* background-color: #f85606; */
+
  }
  
  
@@ -16,47 +17,14 @@
     background-color: #f1f3f6; */
    }
 
-   /* newly added text for responsive */
-  .products{
-    border:8px solid red;
-    background-color: #f85606;
-  }
+  
 
 
 
-  .product {
-    /* border-radius: 15px;
-    width: 300px;
-    height: 350px;
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    background-color: red;
-    border:8px solid red;
-   }
-  
-  .product img {
-    /* width: 150px; */
-   border:8px solid red;
-    
-  }
-  
-  .product .description {
-    text-align: center;
-   
-  }
-  
-  .product:hover {
-    transition: 0.3s ease-in;
-    cursor: pointer;
-  }
+ 
   
  
-  .addToCart{
-    border-radius: 15px;
-   }
+  
   
  
 
@@ -90,8 +58,6 @@
   margin-top: 30px;
   /* margin-bottom: 70px; */
    margin-bottom: 10px;
- 
-
 }
 
 
@@ -110,11 +76,11 @@
  place-content: center;
  grid-template-rows: auto;
  gap:3px;
-/* border:2px solid red; */
 /* display:flex;
 flex-wrap: wrap;
 border:2px solid red;
 justify-content: space-around; */
+
  }
 
 .topdeals-item{
@@ -140,11 +106,26 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 gap:2px;
-/* border:2px solid red; */
+
 }
+
+.topdeals-item:hover{
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 15px 5px #B3B3B3; 
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: -3px 0 15px rgba(0, 0, 0, 0.2), 3px 0 15px rgba(0, 0, 0, 0.2);
+ 
+}
+
+
 
 .topdeals-item img{
   width:100px;
+}
+.topdeals-item img:hover{
+  /* transform: scale(1.1);
+  transition: transform 0.3s ease; */
+  cursor:pointer;
  
 }
   
@@ -193,11 +174,13 @@ gap:2px;
     color:white;
   }
 
-
+  .addToCart{
+    border-radius: 15px;
+   }
+  
 
 /**************************** winter essentials ***********************************/
 .winter{
-  /* border:2px solid red; */
   width: auto;
   height: auto;
   display: grid;
@@ -205,7 +188,7 @@ gap:2px;
   place-content: center;
   /* newly added */
   grid-template-rows: auto;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
 /* 
 display:grid;
@@ -237,11 +220,13 @@ border-radius: 15px;
 -webkit-box-shadow: 3px 3px 15px 5px #B3B3B3; 
 box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 margin:9px;
+
   }
   
 
   .winter-item img{
     width:100px;
+    
   }
     
   
@@ -266,7 +251,6 @@ margin:9px;
   position:relative;
   display:flex;
   justify-content: flex-end;
- /* border:2px solid blue; */
  }
   
   .shop-btn{
@@ -384,9 +368,8 @@ margin:9px;
 top deals */
 
 .topdeals{
-  /* border:2px solid red; */
-  gap:3px;
-}
+  gap:4.5px;
+ }
 
 .topdeals-item{
   display: flex;
