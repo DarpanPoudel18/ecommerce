@@ -1,5 +1,6 @@
 import React, { useState,createContext,useEffect } from 'react'
 import { PRODUCTS } from '../products'
+import Item from 'antd/es/list/Item'
 
 export const ShopContext = createContext(null)
 
@@ -11,19 +12,16 @@ const getDefaultCart=()=>{
     return cart
 }
 
-// new changes
-// const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart'))
-// new changes ends
+
 
 export const ShopContextProvider = (props) => {
-    // const[cartItems,setCartItems]=useState(getDefaultCart()) old code
-    const[cartItems,setCartItems]=useState(getDefaultCart())
+    const savedCart = localStorage.getItem('cart');
+    const initialCartItems = savedCart ? JSON.parse(savedCart) : getDefaultCart();
+    const[cartItems,setCartItems]=useState(initialCartItems)
 
-    // new changes
-    // useEffect(()=>{
-    //    localStorage.setItem('cart',JSON.stringify(cartItems)) 
-    // },[cartItems])
-   // new changes ends
+    // const[cartItems,setCartItems]=useState(getDefaultCart())
+
+    
    
     const getTotalCartAmount=()=>{
         let totalAmount = 0
@@ -35,6 +33,8 @@ export const ShopContextProvider = (props) => {
         }
         return totalAmount
     }
+
+   
  
     const addToCart=(itemId)=>{
         setCartItems((prev)=> ({...prev, [itemId]: prev[itemId]+1}))
@@ -48,10 +48,45 @@ export const ShopContextProvider = (props) => {
         setCartItems((prev)=>({...prev,[itemId]:newAmount}))
     }
 
+
+
+    // Save cart items to local storage whenever cartItems change
+    useEffect(()=>{
+       localStorage.setItem('cart',JSON.stringify(cartItems)) 
+    },[cartItems])
+
+
+
+useEffect(() => {
+    // Load cart items from local storage if available
+    const savedCart = localStorage.getItem('cart');
+    if (savedCart) {
+      setCartItems(JSON.parse(savedCart));
+    }
+  }, []);
+
+
+
+
     const contextValue = {cartItems, addToCart, removeFromCart, updateCartItemCount, getTotalCartAmount}
    
   return (
     <ShopContext.Provider value={contextValue}>{props.children}</ShopContext.Provider>
   )
 }   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

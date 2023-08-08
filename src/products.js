@@ -684,14 +684,14 @@ export const PRODUCTS = [
     category:"winter"
   },
   {
-    id: 85,
+    id: 86,
     productName: "winter jacket",
     price: 1900,
     productImage: product34,
     category:"winter"
   },
   {
-    id: 85,
+    id: 87,
     productName: "topi",
     price: 1900,
     productImage: product65,

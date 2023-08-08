@@ -37,14 +37,14 @@ const Mens = () => {
 
         <div className="mens">
             {isLoading?
-            <h1 className="loader">LOADING...</h1>
+            <h1 className="loader"></h1>
             :
             <>
 
             {state.map((data)=>{
 
               return(
-                <div className="men">
+                <div className="men" key={data.id}>
                   <img src={data.productImage} alt="img"  />
                   <div className="description">
                 <p><b>{data.productName}</b></p>
