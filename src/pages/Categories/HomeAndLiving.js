@@ -53,7 +53,7 @@ const HomeAndLiving = () => {
           <p><b>{data.productName}</b></p>
           <p>RS {data.price}</p>
           </div>
-          <Button type="primary"
+          <Button type="primary" 
           onClick={()=>{addToCart(data.id)
           openNotificationWithIcon('success') }} >ADD To Cart</Button>
        </div>

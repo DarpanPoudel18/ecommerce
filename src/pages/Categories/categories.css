@@ -103,6 +103,7 @@
     padding-bottom: 5px;
     border-radius: 15px;
    
+   
   }
   
   .addToCartBttn:hover {
@@ -116,7 +117,7 @@
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+ align-items: center;
   gap:6rem;
 }
 
@@ -127,6 +128,7 @@
   flex-direction: column;
   justify-content: center;
   margin-bottom:22px;
+  overflow: hidden;
 }
 
 
@@ -142,6 +144,11 @@
 .homeandliv:hover {
   transition: 0.3s ease-in;
   cursor: pointer;
+}
+
+.homeandliv button{
+ 
+  border-radius: 0;
 }
 
 /**************************** Mens fashion **********************************/

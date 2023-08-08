@@ -32,7 +32,7 @@ const Shop = () => {
       <div className="banners">
         <Topdeals />
         <Winter />
-        <Services />
+       
       </div>
       <Footer/>
     </>
