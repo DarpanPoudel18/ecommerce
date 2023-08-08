@@ -44,7 +44,11 @@ const App = () => {
           <Route path="/account" element={<Account/>}/>
          
         </Routes>
-        <Footer/>
+       
+
+
+
+        
       </Router>
       </ShopContextProvider>
      

@@ -2,6 +2,7 @@ import React,{useState,useContext} from 'react'
 import {ShopContext} from '../../context/Shop-context'
 import {PRODUCTS} from '../../products'
 import { Button, notification, Space } from 'antd';
+import Footer from '../../components/Footer/Footer';
 
 const HomeAndLiving = () => {
   const[state,setState]=useState([])

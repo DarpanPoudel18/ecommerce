@@ -1,31 +1,51 @@
 import React from 'react'
-import {PRODUCTS} from '../../products'
 import Maincarousel from './Maincarousel'
-import Product from './Product'
-import "./shop.css"
-
-import Topbrands from '../Categories/Topbrands'
 import Topdeals from './Topdeals'
 import Winter from './Winter'
 import Services from './Services'
+import "./shop.css"
+import Footer from '../../components/Footer/Footer'
+
 
 const Shop = () => {
+
+  const [isLoading, setIsLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    });
+  }, [2000]);
+
   return (
     <div className="shop">
-        <Maincarousel/>
-       <div className="banners" >
-       <Topdeals/>
-       <Winter/>
-       <Services/>
-       </div>
-        {/* <div className="products">
-            {PRODUCTS.map((product)=> (
 
-            <Product data={product}/>
-            ))}
-        </div> */}
+    {isLoading ? ( // Conditionally render Loader or content
+   <>
+   <h1 className="shoploader"></h1>
+ 
+   </>
+    
+  ) : (
+    <>
+      <Maincarousel />
+      <div className="banners">
+        <Topdeals />
+        <Winter />
+        <Services />
+      </div>
+      <Footer/>
+    </>
+  )}
+
+
+       
+       
     </div>
   )
 }
 
 export default Shop
+
+
+
