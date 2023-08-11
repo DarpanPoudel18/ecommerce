@@ -339,22 +339,21 @@
 
 
 /************************************************************************/
-@media screen and (max-width: 720px){
-  /* .categories{
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    padding:5px;
-    height:50px;
-    width:69.5rem;
+
+
+
+@media(max-width:680px){
+  .cat-links{
+     padding:2px 0;
   }
 
- .footer{
-    margin-top: 100rem;
-    position:relative;
-  } */
- 
+  .cat-links a{
+    font-size: 14px;
+  }
+
+
 }
+
 
 @media(max-width:600px){
   .categories{
@@ -362,6 +361,7 @@
     height:10%;
     display:flex;
     justify-content: space-between;
+   
  
     
   }

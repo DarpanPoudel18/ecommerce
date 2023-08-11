@@ -23,7 +23,6 @@ const Winter = () => {
          ,[])
 
 
-
          const [api, contextHolder] = notification.useNotification();
          const openNotificationWithIcon = (type) => {
            api[type]({

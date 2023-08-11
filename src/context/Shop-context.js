@@ -22,6 +22,17 @@ export const ShopContextProvider = (props) => {
     // const[cartItems,setCartItems]=useState(getDefaultCart())
 
     
+
+
+    const getTotalCartQuantity = () => {
+        let totalQuantity = 0;
+        for (const item in cartItems) {
+          totalQuantity += cartItems[item];
+        }
+        return totalQuantity;
+      };
+
+
    
     const getTotalCartAmount=()=>{
         let totalAmount = 0
@@ -68,7 +79,14 @@ useEffect(() => {
 
 
 
-    const contextValue = {cartItems, addToCart, removeFromCart, updateCartItemCount, getTotalCartAmount}
+    const contextValue = {
+         cartItems,
+         addToCart,
+        removeFromCart,
+      updateCartItemCount,
+       getTotalCartAmount,
+       getTotalCartQuantity
+    }
    
   return (
     <ShopContext.Provider value={contextValue}>{props.children}</ShopContext.Provider>

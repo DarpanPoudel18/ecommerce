@@ -1,14 +1,15 @@
 
 .navbar {
     width: 100%;
-    height: 90px;
+    height: 80px;
     color:white;
     display: flex;
     justify-content:space-around;
     align-items: center;
     gap:70px;
     background-color: #007185;
-  
+  overflow: hidden;
+ 
   }
   
 
@@ -26,7 +27,7 @@ border:6px dotted orange;
 
 
 .cart-logo{
-    top:3px;
+    top:7px;
     color:white;
     /* color:yellow; */
     position:relative;
@@ -34,12 +35,16 @@ border:6px dotted orange;
 
 .home-logo{
      color:white;
+     top:4px;
+     position:relative;
   }
 
 .account-logo{
+    top:4px;
+    font-size: 22px;
     color:orange;
     background-color: black;
-
+    position:relative;
 }
 
 .vector-logo{
@@ -48,6 +53,24 @@ border:6px dotted orange;
   position:absolute;
 }
 
+.cart-badge{
+  position: absolute;
+  top:-2px;
+  right: -10px; 
+  background-color: orangered;
+  color: white;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 12px;
+  width:30%;
+ }
+
+
+/* link */
+.cart-link{
+  /* border:2px solid red; */
+  position: relative;
+}
 
 /*******************************************************************************/
   /* .links {
@@ -62,10 +85,11 @@ border:6px dotted orange;
   .links {
     display: flex;
     gap:1.5vw;
+    /* padding:6px 0; */
     justify-content: center;
     border:2px solid black;
-   background-color: black;
     border-radius: 8px;
+    background-color: black;
   }
   
   .links a {
@@ -92,12 +116,14 @@ border:6px dotted orange;
 
   
  .ACCOUNT-BTN{
+    position:relative;
      cursor:pointer;
      color:white;
     background-color:black;
     border:2px solid black;
-    font-size: 15px;
-   }
+    font-size: 16px;
+   
+ }
  
 
  /*******************************************************/  
@@ -107,6 +133,10 @@ border:6px dotted orange;
     display:none;
   }
 }
+
+
+
+
 
 @media(max-width:600px){
 .links{
