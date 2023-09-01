@@ -47,7 +47,7 @@ const Topdeals = () => {
                 <img src={data.productImage} alt="img"  />
             <Button type="primary" className="addToCart"
             onClick={()=>{addToCart(data.id)
-                openNotificationWithIcon('success') }} >ADD To Cart</Button>
+                openNotificationWithIcon('success') }} >Add to cart</Button>
 
             </div>
             )

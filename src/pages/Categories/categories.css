@@ -81,7 +81,7 @@
 
   .electronic img {
     width: 150px;
-    
+    height:150px;
   }
   
   .electronic .description {
@@ -93,7 +93,12 @@
     cursor: pointer;
   }
 
-  .addToCartBttn {
+  .electronic button{
+    border-radius: 0;
+  }
+
+
+  /* .addToCartBttn {
     background-color: transparent;
     border: 2px solid rgb(19, 19, 19);
     min-width: 100px;
@@ -104,13 +109,13 @@
     border-radius: 15px;
    
    
-  }
+  } */
   
-  .addToCartBttn:hover {
+  /* .addToCartBttn:hover {
     background-color: rgb(19, 19, 19);
     color: white;
     cursor: pointer;
-  } 
+  }  */
 
 /******************  home and living ********************/
 .homeandliving{
@@ -127,14 +132,15 @@
   display:flex;
   flex-direction: column;
   justify-content: center;
+  /* align-items: center; */
   margin-bottom:22px;
   overflow: hidden;
-}
+ }
 
 
 .homeandliv img {
   width: 150px;
-  
+  height:150px;
 }
 
 .homeandliv .description {
@@ -167,12 +173,13 @@
   flex-direction: column;
   justify-content: center;
   margin-bottom:22px;
+  /* border:2px solid red; */
 }
 
 
 .men img {
   width: 150px;
-  
+  height:150px;
 }
 
 .men .description {
@@ -182,6 +189,11 @@
 .men:hover {
   transition: 0.3s ease-in;
   cursor: pointer;
+}
+
+
+.men button{
+  border-radius: 0;
 }
 
 /************************************* sports*******************************/
@@ -205,7 +217,7 @@
 
 .sport img {
   width: 150px;
-  
+  height:150px;
 }
 
 .sport .description {
@@ -215,6 +227,11 @@
 .sport:hover {
   transition: 0.3s ease-in;
   cursor: pointer;
+}
+
+
+.sport button{
+ border-radius: 0;
 }
 
 /*************************** Women's fashion *************************/
@@ -237,7 +254,7 @@
 
 .women img {
   width: 150px;
-  
+  height:150px;
 }
 
 .women .description {
@@ -247,6 +264,10 @@
 .women:hover {
   transition: 0.3s ease-in;
   cursor: pointer;
+}
+
+.women button{
+  border-radius: 0;
 }
 
 /**************************** Top brands************************/
@@ -270,7 +291,7 @@
 
 .topbrand img {
   width: 150px;
-  
+  height:150px;
 }
 
 .topbrand .description {
@@ -282,6 +303,9 @@
   cursor: pointer;
 }
 
+.topbrand button{
+  border-radius: 0;
+}
 
 
 

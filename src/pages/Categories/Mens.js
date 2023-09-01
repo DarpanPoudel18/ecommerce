@@ -53,7 +53,7 @@ const Mens = () => {
                 
                 <Button type="primary"
                 onClick={()=>{addToCart(data.id)
-                  openNotificationWithIcon('success') }} >ADD To Cart</Button>
+                  openNotificationWithIcon('success') }} >Add to cart</Button>
 
                 </div>
               )
