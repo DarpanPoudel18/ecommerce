@@ -55,7 +55,7 @@ const Electronics = () => {
                 <img src={data.productImage} alt="img"  />
              <div className="description">
                 <p><b>{data.productName}</b></p>
-                <p>Rs {data.price}</p>
+                <p className="price">Rs {data.price}</p>
              </div>
              <Button type="primary"
               onClick={()=>{addToCart(data.id)

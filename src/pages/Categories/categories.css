@@ -82,18 +82,29 @@
   flex-direction: column;
   justify-content: center;
   margin-bottom:22px;
+  background-color:  rgb(255, 255, 255);
+ border:2px solid whitesmoke;
+
 }
 
   .electronic img {
     width: 150px;
     height:150px;
+    border:1px solid whitesmoke;
+    transition: transform 0.3s;
   }
+
+  .electronic img:hover{
+    transform: scale(1.1); 
+   }
   
   .electronic .description {
     text-align: center;
-  }
+   }
+
+ 
   
-  .electronic:hover {
+  .electronic img:hover {
     transition: 0.3s ease-in;
     cursor: pointer;
   }
@@ -129,8 +140,6 @@
   justify-content: center;
   align-items: center;
   gap:6rem;
-
- 
 }
 
 
@@ -140,21 +149,30 @@
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
-  margin-bottom:22px;
+   margin-bottom:22px;
   overflow: hidden;
+  gap: 10px;
+background-color:  rgb(255, 255, 255);
+border:2px solid whitesmoke;
 
- 
  }
 
 
 .homeandliv img {
   width: 150px;
   height:150px;
+  transition: transform 0.3s;
 }
+
+
+.homeandliv img:hover{
+  transform: scale(1.1); 
+ }
+
 
 .homeandliv .description {
   text-align: center;
-}
+ }
 
 .homeandliv:hover {
   transition: 0.3s ease-in;
@@ -183,13 +201,20 @@
   justify-content: center;
   margin-bottom:22px;
   /* border:2px solid red; */
+  background-color:  rgb(255, 255, 255);
+border:2px solid whitesmoke;
 }
 
 
 .men img {
   width: 150px;
   height:150px;
+  transition: transform 0.3s;
 }
+
+.men img:hover{
+  transform: scale(1.1); 
+ }
 
 .men .description {
   text-align: center;
@@ -221,13 +246,20 @@
   flex-direction: column;
   justify-content: center;
   margin-bottom:22px;
+  background-color:  rgb(255, 255, 255);
+  border:2px solid whitesmoke;
 }
 
 
 .sport img {
   width: 150px;
   height:150px;
+  transition: transform 0.3s;
 }
+
+.sport img:hover{
+  transform: scale(1.1); 
+ }
 
 .sport .description {
   text-align: center;
@@ -258,13 +290,20 @@
   flex-direction: column;
   justify-content: center;
   margin-bottom:22px;
+  background-color:  rgb(255, 255, 255);
+  border:2px solid whitesmoke;
 }
 
 
 .women img {
   width: 150px;
   height:150px;
+  transition: transform 0.3s;
 }
+
+.women img:hover{
+  transform: scale(1.1); 
+ }
 
 .women .description {
   text-align: center;
@@ -296,12 +335,19 @@
   flex-direction: column;
   justify-content: center;
   margin-bottom:22px;
+  background-color:  rgb(255, 255, 255);
+  border:2px solid whitesmoke;
 }
 
 .topbrand img {
   width: 150px;
   height:150px;
+  transition: transform 0.3s;
 }
+
+.topbrand img:hover{
+  transform: scale(1.1); 
+ }
 
 .topbrand .description {
   text-align: center;
