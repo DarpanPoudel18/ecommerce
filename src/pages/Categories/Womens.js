@@ -49,7 +49,7 @@ const Womens = () => {
                   <img src={data.productImage} alt="img"  />
                   <div className="description">
                 <p><b>{data.productName}</b></p>
-                  <p>RS {data.price}</p>
+                  <p>Rs {data.price}</p>
                 </div>
                 
                 <Button type="primary"

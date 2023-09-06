@@ -1,3 +1,8 @@
+.description p{
+  text-transform: capitalize;
+}
+
+
 .categories{
     display: flex;
     justify-content: center;
@@ -122,8 +127,10 @@
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
- align-items: center;
+  align-items: center;
   gap:6rem;
+
+ 
 }
 
 
@@ -135,6 +142,8 @@
   /* align-items: center; */
   margin-bottom:22px;
   overflow: hidden;
+
+ 
  }
 
 
