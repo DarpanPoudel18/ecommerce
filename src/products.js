@@ -86,20 +86,7 @@ import product84 from "./winter/sweater.jpg";
 import product85 from "./winter/waterproof.jpg";
 
 //newly added 2023
-import mosquito from "./homeandliving/mosquito.jpg";
-import halfshirt from "./menfashion/halfshirt.jpg";
-import jordan from "./menfashion/jordan.jpg";
-import naruto from "./menfashion/naruto.jpg";
-import nepalcricket from "./sports/nepalcricket.jpg";
-import nepalfootball from "./sports/nepalfootball.jpg";
-import nepalold from "./sports/nepalold.jpg";
-import balen from "./topbrands/balen.jpg";
-import newWatch from "./topbrands/newWatch.jpg";
-import torch from "./topbrands/torch.jpg";
-import trimmer from "./topbrands/trimmer.jpg";
-import heel from "./ladiesfashion/heel.jpg";
-import ladiesglass from "./ladiesfashion/ladiesglass.jpg";
-import sandal from "./ladiesfashion/sandal.jpg";
+
 
  
 
@@ -715,102 +702,12 @@ export const PRODUCTS = [
     productImage: product65,
     category:"winter"
   },
-  {
-    id: 88,
-    productName: "mosquito killer",
-    price: 480,
-    productImage: mosquito,
-    category:"homeandliving"
-  },
-  {
-    id: 89,
-    productName: "half shirt ",
-    price: 900,
-    productImage: halfshirt,
-    category:"menfashion"
-  },
-  {
-    id: 90,
-    productName: "jordan ",
-    price: 300,
-    productImage: jordan,
-    category:"menfashion"
-  },
-  {
-    id: 91,
-    productName: "narut0 ",
-    price: 400,
-    productImage: naruto,
-    category:"menfashion"
-  },
-  {
-    id: 92,
-    productName: "cricket jersey",
-    price: 1300,
-    productImage: nepalcricket,
-    category:"sports"
-  },
-  {
-    id: 93,
-    productName: "old jersey ",
-    price: 300,
-    productImage: nepalold,
-    category:"sports"
-  },
-  {
-    id: 94,
-    productName: "football jersey",
-    price: 1200,
-    productImage: nepalfootball,
-    category:"sports"
-  },
-  {
-    id: 95,
-    productName: "balen glass ",
-    price: 1200,
-    productImage: balen,
-    category:"topbrands"
-  },
-  {
-    id: 96,
-    productName: "new watch ",
-    price: 5000,
-    productImage: newWatch,
-    category:"topbrands"
-  },
-  {
-    id: 97,
-    productName: "torch",
-    price: 200,
-    productImage: torch,
-    category:"topbrands"
-  },
-  {
-    id: 98,
-    productName: "trimmer",
-    price: 1200,
-    productImage: trimmer,
-    category:"topbrands"
-  },
-  {
-    id:99,
-    productName: "heel ",
-    price: 400,
-    productImage: heel,
-    category:"ladiesfashion"
-  },
-  {
-    id:100,
-    productName: "glass ",
-    price: 1700,
-    productImage: ladiesglass,
-    category:"ladiesfashion"
-  },
-  {
-    id:101,
-    productName: "sandal",
-    price: 1900,
-    productImage: sandal,
-    category:"ladiesfashion"
-  }
+ 
+
+
+ 
+ 
+ 
+ 
+ 
 ];

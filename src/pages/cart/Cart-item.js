@@ -9,7 +9,7 @@ const CartItem = ({data}) => {
         <img src={productImage} alt="img"/>
         <div className="description CART-DESC">
             <p><b>{productName}</b></p>
-            <p className="price">RS {price}</p>
+            <p className="price">Rs {price}</p>
             <div className="countHandler">
               <button onClick={()=>removeFromCart(id)}>-</button>
               <input value={cartItems[id]} onChange={(e)=>updateCartItemCount(Number(e.target.value),id)}/>
