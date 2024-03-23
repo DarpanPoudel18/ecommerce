@@ -47,34 +47,16 @@
 
 /****************************** electronics **********************/
 
-/* .electronics{
-    margin-top: -20px;
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
-} */
-
 
 .electronics{
  display:flex;
  flex-wrap: wrap;
  justify-content: center;
  align-items: center;
- gap:6rem;
+ gap:4rem;
 }
 
-/* .electronic{
-    border-radius: 15px;
-    width: 300px;
-    height: 350px;
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
+
 
 .electronic{
   margin-top:22px;
@@ -104,8 +86,7 @@
 
  
   
-  .electronic img:hover {
-    transition: 0.3s ease-in;
+  .electronic :hover {
     cursor: pointer;
   }
 
@@ -139,7 +120,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap:6rem;
+  gap:4rem;
 }
 
 
@@ -151,8 +132,7 @@
   /* align-items: center; */
    margin-bottom:22px;
   overflow: hidden;
-  gap: 10px;
-background-color:  rgb(255, 255, 255);
+ background-color:  rgb(255, 255, 255);
 border:2px solid whitesmoke;
 
  }
@@ -175,7 +155,6 @@ border:2px solid whitesmoke;
  }
 
 .homeandliv:hover {
-  transition: 0.3s ease-in;
   cursor: pointer;
 }
 
@@ -190,7 +169,7 @@ border:2px solid whitesmoke;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap:6rem;
+  gap:4rem;
 
 }
 
@@ -221,7 +200,6 @@ border:2px solid whitesmoke;
 }
 
 .men:hover {
-  transition: 0.3s ease-in;
   cursor: pointer;
 }
 
@@ -236,7 +214,7 @@ border:2px solid whitesmoke;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap:6rem;
+  gap:4rem;
 }
 
 
@@ -266,7 +244,6 @@ border:2px solid whitesmoke;
 }
 
 .sport:hover {
-  transition: 0.3s ease-in;
   cursor: pointer;
 }
 
@@ -281,8 +258,12 @@ border:2px solid whitesmoke;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap:6rem;
+  gap:4rem;
+  
 }
+
+
+
 
 .women{
   margin-top:22px;
@@ -310,7 +291,6 @@ border:2px solid whitesmoke;
 }
 
 .women:hover {
-  transition: 0.3s ease-in;
   cursor: pointer;
 }
 
@@ -324,7 +304,7 @@ border:2px solid whitesmoke;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap:6rem;
+  gap:4rem;
  
 }
 
@@ -354,7 +334,6 @@ border:2px solid whitesmoke;
 }
 
 .topbrand:hover {
-  transition: 0.3s ease-in;
   cursor: pointer;
 }
 
