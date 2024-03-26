@@ -90,7 +90,7 @@ const Login = () => {
                 fontSize: "15px",
               }}
             >
-              or signup using
+              or signin using
             </h5>
 
             <Space className="space">

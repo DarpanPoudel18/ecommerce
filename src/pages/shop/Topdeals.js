@@ -4,6 +4,7 @@ import { ShopContext } from "../../context/Shop-context";
 import { PRODUCTS } from "../../products";
 import { Button, notification, Space } from "antd";
 import "./shop.css";
+import { Link } from "react-router-dom";
 
 const Topdeals = () => {
   const [state, setState] = useState([]);
@@ -43,6 +44,7 @@ const Topdeals = () => {
           return (
             <div className="topdeals-item">
               <img src={data.productImage} alt="img" />
+
               <Button
                 type="primary"
                 className="addToCart"
