@@ -18,13 +18,15 @@ import Account from "./pages/MyAccount/Account";
 import { ShopContextProvider } from "./context/Shop-context";
 import Footer from "./components/Footer/Footer";
 import ProductSinglePage from "./pages/ProductSinglePage";
+import { PRODUCTS } from "./products";
+import SearchResults from "./pages/SearchResults";
 
 const App = () => {
   return (
     <div>
       <ShopContextProvider>
         <Router>
-          <Navbar />
+          <Navbar products={PRODUCTS} />
           <Categories />
 
           <Routes>
@@ -39,6 +41,10 @@ const App = () => {
             <Route path="/test" element={<Test />} />
             <Route path="/account" element={<Account />} />
             <Route path="/product/:id" element={<ProductSinglePage />} />
+            <Route
+              path="/searchresults"
+              element={<SearchResults products={PRODUCTS} />}
+            />
           </Routes>
         </Router>
       </ShopContextProvider>
