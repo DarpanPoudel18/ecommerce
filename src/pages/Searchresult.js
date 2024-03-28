@@ -3,9 +3,10 @@ import { useLocation } from "react-router-dom";
 import { Button, notification, Space } from "antd";
 import { ShopContext } from "../context/Shop-context";
 import "./searchresult.css";
-import { Card, Col, Row } from "antd";
+import { Card } from "antd";
 
-const SearchResults = ({ products }) => {
+const Searchresult = ({ products }) => {
+  const { Meta } = Card;
   const [state, setState] = React.useState([]);
   const { addToCart, cartItems } = React.useContext(ShopContext);
   const location = useLocation();
@@ -30,15 +31,17 @@ const SearchResults = ({ products }) => {
       </h2>
       <div className="search-product-list">
         {filteredProducts.map((product) => (
-          <div key={product.id} className="search-product">
+          <Card key={product.id} className="search-product" hoverable>
             <img
               src={product.productImage}
               alt={product.productName}
               className="searched-img"
             />
             <div className="search-description">
-              <h3>{product.productName}</h3>
-              <p>Price: ${product.price}</p>
+              <h3>
+                <Meta title={product.productName} description="" />
+              </h3>
+              <p>Price: Rs {product.price}</p>
             </div>
             <Button
               type="primary"
@@ -49,11 +52,11 @@ const SearchResults = ({ products }) => {
             >
               Add to cart
             </Button>
-          </div>
+          </Card>
         ))}
       </div>
     </div>
   );
 };
 
-export default SearchResults;
+export default Searchresult;

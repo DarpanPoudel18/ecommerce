@@ -19,7 +19,7 @@ import { ShopContextProvider } from "./context/Shop-context";
 import Footer from "./components/Footer/Footer";
 import ProductSinglePage from "./pages/ProductSinglePage";
 import { PRODUCTS } from "./products";
-import SearchResults from "./pages/SearchResults";
+import Searchresult from "./pages/Searchresult";
 
 const App = () => {
   return (
@@ -44,9 +44,10 @@ const App = () => {
               path="/product/:id"
               element={<ProductSinglePage products={PRODUCTS} />}
             />
+
             <Route
               path="/searchresults"
-              element={<SearchResults products={PRODUCTS} />}
+              element={<Searchresult products={PRODUCTS} />}
             />
           </Routes>
         </Router>
