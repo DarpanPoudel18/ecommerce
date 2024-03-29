@@ -203,10 +203,10 @@ gap:2px;
   display: grid;
   grid-template-columns : 1fr 1fr 1fr 1fr 1fr ;
   place-content: center;
+
   /* newly added */
   grid-template-rows: auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  /* border:2px solid red; */
   margin-bottom:30px;
  }
 
@@ -225,15 +225,14 @@ gap:2px;
   -webkit-box-shadow: 3px 3px 15px 5px #B3B3B3; 
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); */
   display:flex;
-flex-direction: column;
 justify-content: center;
 align-items: center;
-border-radius: 15px;
+/* border-radius: 15px; */
 -webkit-box-shadow: 3px 3px 15px 5px #B3B3B3; 
 box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 margin:9px;
 padding:9px;
-/* border:2px solid red; */
+/* border:2px solid blue; */
 
   }
   
@@ -241,6 +240,7 @@ padding:9px;
   .winter-item img{
     width:100px;
     height:100px;
+   
   }
     
   
