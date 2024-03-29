@@ -34,9 +34,12 @@ const ProductSinglePage = ({ products }) => {
             className="single-pg-img"
           />
           <div className="desc-product-single-page">
-            <p>Product Name: {product.productName}</p>
-            <p>Price: Rs {product.price}</p>
-
+            <p style={{ color: "green" }}>4 in Stock</p>
+            <h1> {product.productName}</h1>
+            <h3 style={{ color: "#4096FF" }}> Rs {product.price}</h3>
+            <p>
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+            </p>
             <Button
               type="primary"
               onClick={() => {
