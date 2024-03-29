@@ -42,8 +42,10 @@ const Winter = () => {
         {state.map((data) => {
           return (
             <div className="winter-item">
-              <img src={data.productImage} alt="img" />
-              <p>{data.productName}</p>
+              <Link className="link" to={`/product/${data.id}`}>
+                <img src={data.productImage} alt="img" />
+                <p>{data.productName}</p>
+              </Link>
             </div>
           );
         })}
