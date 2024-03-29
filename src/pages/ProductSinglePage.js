@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { Button, notification, Space } from "antd";
 import { ShopContext } from "../context/Shop-context";
+import "./productsinglepage.css";
 
 const ProductSinglePage = ({ products }) => {
   const { addToCart, cartItems } = useContext(ShopContext);
@@ -24,26 +25,32 @@ const ProductSinglePage = ({ products }) => {
   return (
     <div>
       {contextHolder}
-      <h1>Product Details</h1>
+
       {product ? (
-        <div>
-          <img src={product.productImage} alt={product.productName} />
-          <p>Product Name: {product.productName}</p>
-          <p>Price: Rs {product.price}</p>
-          {/* Add more details here if needed */}
+        <div className="product-single-page">
+          <img
+            src={product.productImage}
+            alt={product.productName}
+            className="single-pg-img"
+          />
+          <div className="desc-product-single-page">
+            <p>Product Name: {product.productName}</p>
+            <p>Price: Rs {product.price}</p>
+
+            <Button
+              type="primary"
+              onClick={() => {
+                addToCart(product.id);
+                openNotificationWithIcon("success");
+              }}
+            >
+              Add to cart
+            </Button>
+          </div>
         </div>
       ) : (
         <p>Product not found</p>
       )}
-      <Button
-        type="primary"
-        onClick={() => {
-          addToCart(product.id);
-          openNotificationWithIcon("success");
-        }}
-      >
-        Add to cart
-      </Button>
     </div>
   );
 };
