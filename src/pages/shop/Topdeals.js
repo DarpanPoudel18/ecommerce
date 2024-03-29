@@ -31,7 +31,6 @@ const Topdeals = () => {
 
   return (
     <div>
-      {" "}
       {contextHolder}
       <span className="topdeals-title">Top Deals</span>
       <div className="shopmore">
@@ -43,18 +42,9 @@ const Topdeals = () => {
         {state.map((data) => {
           return (
             <div className="topdeals-item">
-              <img src={data.productImage} alt="img" />
-
-              <Button
-                type="primary"
-                className="addToCart"
-                onClick={() => {
-                  addToCart(data.id);
-                  openNotificationWithIcon("success");
-                }}
-              >
-                Add to cart
-              </Button>
+              <Link className="link" to={`/product/${data.id}`}>
+                <img src={data.productImage} alt="img" />
+              </Link>
             </div>
           );
         })}

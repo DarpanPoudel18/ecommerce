@@ -95,10 +95,8 @@
  place-content: center;
  grid-template-rows: auto;
  gap:3px;
-/* display:flex;
-flex-wrap: wrap;
-border:2px solid red;
-justify-content: space-around; */
+background-color: #FFFFFF;
+
 
  }
 
