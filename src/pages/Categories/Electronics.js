@@ -1,8 +1,8 @@
 import React, { useState, useContext } from "react";
 import { ShopContext } from "../../context/Shop-context";
-// import {useParams} from 'react-router-dom'
 import { PRODUCTS } from "../../products";
 import { Button, notification, Space } from "antd";
+import { Link } from "react-router-dom";
 
 const Electronics = () => {
   const [state, setState] = useState([]);
@@ -10,7 +10,6 @@ const Electronics = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   function filterCategory() {
-    //  let cop = [...PRODUCTS]
     let res = PRODUCTS.filter((item) => item.category === "electronics");
     setState(res);
   }
@@ -42,13 +41,16 @@ const Electronics = () => {
             {state.map((data) => {
               return (
                 <div className="electronic" key={data.id}>
-                  <img src={data.productImage} alt="img" />
-                  <div className="description">
-                    <p>
-                      <b>{data.productName}</b>
-                    </p>
-                    <p>Rs {data.price}</p>
-                  </div>
+                  <Link className="link" to={`/product/${data.id}`}>
+                    <img src={data.productImage} alt="img" />
+                    <div className="description">
+                      <p>
+                        <b>{data.productName}</b>
+                      </p>
+                      <p>Rs {data.price}</p>
+                    </div>
+                  </Link>
+
                   <Button
                     type="primary"
                     onClick={() => {

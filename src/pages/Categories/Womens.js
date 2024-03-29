@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { ShopContext } from "../../context/Shop-context";
 import { PRODUCTS } from "../../products";
 import { Button, notification, Space } from "antd";
+import { Link } from "react-router-dom";
 
 const Womens = () => {
   const [state, setState] = useState([]);
@@ -40,13 +41,15 @@ const Womens = () => {
             {state.map((data) => {
               return (
                 <div className="women" key={data.id}>
-                  <img src={data.productImage} alt="img" />
-                  <div className="description">
-                    <p>
-                      <b>{data.productName}</b>
-                    </p>
-                    <p>Rs {data.price}</p>
-                  </div>
+                  <Link className="link" to={`/product/${data.id}`}>
+                    <img src={data.productImage} alt="img" />
+                    <div className="description">
+                      <p>
+                        <b>{data.productName}</b>
+                      </p>
+                      <p>Rs {data.price}</p>
+                    </div>
+                  </Link>
 
                   <Button
                     type="primary"
