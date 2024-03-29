@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { Button, notification, Space } from "antd";
 import { ShopContext } from "../context/Shop-context";
 import "./productsinglepage.css";
+import { Rate } from "antd";
 
 const ProductSinglePage = ({ products }) => {
   const { addToCart, cartItems } = useContext(ShopContext);
@@ -34,8 +35,15 @@ const ProductSinglePage = ({ products }) => {
             className="single-pg-img"
           />
           <div className="desc-product-single-page">
-            <p style={{ color: "green" }}>4 in Stock</p>
             <h1> {product.productName}</h1>
+            <p style={{ color: "gray" }}>
+              Ratings: <Rate defaultValue={2} />
+            </p>
+            <p style={{ color: "gray" }}>
+              Brand:
+              <span style={{ color: "#1684A8" }}> No Brand</span>
+            </p>
+
             <h3 style={{ color: "#4096FF" }}> Rs {product.price}</h3>
             <p>
               Contrary to popular belief, Lorem Ipsum is not simply random text.
