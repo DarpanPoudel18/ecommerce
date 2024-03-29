@@ -44,10 +44,11 @@ const ProductSinglePage = ({ products }) => {
               <span style={{ color: "#1684A8" }}> No Brand</span>
             </p>
 
-            <h3 style={{ color: "#4096FF" }}> Rs {product.price}</h3>
-            <p>
-              Contrary to popular belief, Lorem Ipsum is not simply random text.
+            <p style={{ color: "gray" }}>
+              Price:
+              <span style={{ color: "#F8631D" }}> Rs {product.price}</span>
             </p>
+
             <Button
               type="primary"
               onClick={() => {
