@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { ShopContext } from "../../context/Shop-context";
 import { PRODUCTS } from "../../products";
 import CartItem from "./Cart-item";
+// import Cartitem from "./Cartitem";
 import "./cart.css";
 import { useNavigate } from "react-router-dom";
 
@@ -13,7 +14,7 @@ const Cart = () => {
   return (
     <div className="cart">
       <div className="cart-header">
-        <h1 className="cart-title">Your online store</h1>
+        <h1 className="cart-title"></h1>
       </div>
       <div className="cartItems">
         {PRODUCTS.map((product) => {
