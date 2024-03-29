@@ -1,4 +1,128 @@
+
+.total{
+  color:gray;
+}
+
 .cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #F4F4F4;
+  }
+
+
+  .cart-header{
+   top:10px;
+   position:relative;
+    }
+
+
+  .cart-title{
+    text-align: center;
+    font-family: Roboto-Regular;
+    font-size: 25px;
+    color: #20232a;
+    font-weight: bold;
+  }
+  
+  .cartItems{
+    top:2px;
+    position:relative;
+   
+  }
+
+
+  .price{
+font-size: 1rem;
+  }
+
+  .checkout{
+    top:8px;
+    position:relative;
+  }
+
+  .cartItem {
+    width: 700px;
+    height: 150px;
+    display: flex;
+     align-items: center;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    margin: 30px;  
+   
+  }
+  
+  .cartItem img {
+    width: 100px;
+  }
+  
+  .cartItem .description {
+    width: 50%;
+    margin-left: 30px;
+    font-size: 1rem;  
+  }
+  
+  .countHandler input {
+    width: 40px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  .checkout button {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+
+  .cartItem .description{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+   
+  } 
+
+   @media screen and (max-width: 600px){
+      .cart{
+       display:flex;
+       width:100%;
+       height:100%;
+       gap:2rem;
+       position: relative;
+      }
+
+      .cartItems{
+       display:flex;
+       flex-direction: column;
+       width:100%;
+      position:relative;
+     }
+
+      .cartItem{
+        width:80%;
+        position: relative;
+      }
+
+     
+    
+      .CART-DESC > p{
+        font-size: 1.2rem;
+      }
+  }
+
+
+
+
+
+/* 
+  .cart {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,12 +148,13 @@
   .cartItems{
     top:2px;
     position:relative;
-    /* margin:25px; */
+   
   }
 
 
   .price{
 font-size: 20px;
+border:2px solid green;
   }
 
   .checkout{
@@ -43,7 +168,7 @@ font-size: 20px;
     display: flex;
      align-items: center;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    /* border-radius: 25px; */
+   
     margin: 30px;  
    
   }
@@ -56,7 +181,7 @@ font-size: 20px;
     width: 50%;
     margin-left: 30px;
     font-size: 1rem;
-  
+  border:2px solid red;
   
   }
   
@@ -103,4 +228,4 @@ font-size: 20px;
       .CART-DESC > p{
         font-size: 1.2rem;
       }
-  }
+  } */

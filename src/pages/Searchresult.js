@@ -20,12 +20,13 @@ const Searchresult = ({ products }) => {
   const [api, contextHolder] = notification.useNotification();
   const openNotificationWithIcon = (type) => {
     api[type]({
-      message: "Dear user your item has been",
+      message: "Your item has been",
       description: "added to Cart.",
     });
   };
   return (
     <div className="search-Results">
+      {contextHolder}
       <h2>
         {filteredProducts.length} items found for "{query}"
       </h2>
