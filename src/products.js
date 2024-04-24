@@ -622,7 +622,7 @@ export const PRODUCTS = [
   },
   {
     id: 77,
-    productName: "Men jacket Brown",
+    productName: "Men jacket Brown  ",
     price: 2000,
     productImage: product77,
     category: "winter",

@@ -4,7 +4,6 @@ import { ShoppingCart } from "phosphor-react";
 import vector from "../../src/images/vector.svg";
 import d from "../../src/images/d.jpg";
 import "./Navbar.css";
-import SignIn from "../Firebase/SignIn";
 
 import {
   UserOutlined,
@@ -59,7 +58,7 @@ const Navbar = ({ products }) => {
           <ShoppingCart className="cart-logo" />
           <span className="cart-badge">{getTotalCartQuantity()}</span>
         </Link>
-        <SignIn />
+
         <img src={vector} alt="img" className="vector-logo" />
       </div>
     </div>

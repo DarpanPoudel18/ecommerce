@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-social-media   ">
-        <Space className="space">
+        {/*<Space className="space">
           <GoogleCircleFilled style={{ fontSize: "26px", color: "white" }} />
           <IconFont
             type="icon-facebook"
@@ -27,7 +27,7 @@ const Footer = () => {
             type="icon-twitter"
             style={{ fontSize: "26px", color: "white" }}
           />
-        </Space>
+  </Space>*/}
       </div>
       <p style={{ textAlign: "center" }}>
         &copy; Darpan Poudel {new Date().getFullYear()}
