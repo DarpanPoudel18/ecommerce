@@ -1,27 +1,48 @@
-import React from 'react'
-import './categories.css'
-import {Link,NavLink} from 'react-router-dom'
-
-
+import React, { useState } from "react";
+import "./categories.css";
+import { NavLink } from "react-router-dom";
 
 const Categories = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="categories">
- 
-     <div className="cat-links">
-     <NavLink to="/electronics">Electronics</NavLink>
-     <NavLink to="/homeandliving">Home & Living</NavLink>
-     <NavLink to="/mens">Men's Fashion</NavLink>
-     <NavLink to="/sports">Sports</NavLink>
-     <NavLink to="/topbrands">Top brands</NavLink>
-     <NavLink to="/womens">Women's Fashion</NavLink>
+    <>
+      <button className="menu-btn" onClick={toggleSidebar}>
+        ☰
+      </button>
 
-    
-     {/* <Link to="/test">Test</Link> */}
-       </div>
+      <div className={`categories ${isOpen ? "active" : ""}`}>
+        <span className="close-btn" onClick={toggleSidebar}>
+          &times;
+        </span>
 
-     </div>
-  )
-}
+        <div className="cat-links">
+          <NavLink to="/electronics" onClick={toggleSidebar}>
+            Electronics
+          </NavLink>
+          <NavLink to="/homeandliving" onClick={toggleSidebar}>
+            Home & Living
+          </NavLink>
+          <NavLink to="/mens" onClick={toggleSidebar}>
+            Men's Fashion
+          </NavLink>
+          <NavLink to="/sports" onClick={toggleSidebar}>
+            Sports
+          </NavLink>
+          <NavLink to="/topbrands" onClick={toggleSidebar}>
+            Top Brands
+          </NavLink>
+          <NavLink to="/womens" onClick={toggleSidebar}>
+            Women's Fashion
+          </NavLink>
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default Categories
+export default Categories;

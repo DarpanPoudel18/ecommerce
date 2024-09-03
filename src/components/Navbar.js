@@ -44,12 +44,6 @@ const Navbar = ({ products }) => {
       </Space>
 
       <div className="links">
-        <Link to="/account">
-          <button className="ACCOUNT-BTN" onClick={() => Account()}>
-            <UserOutlined className="account-logo" />{" "}
-          </button>
-        </Link>
-
         <Link to="/">
           <HomeOutlined className="home-logo" />
         </Link>
