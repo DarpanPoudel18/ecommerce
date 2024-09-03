@@ -44,7 +44,7 @@ const Winter = () => {
             <div className="winter-item">
               <Link className="link" to={`/product/${data.id}`}>
                 <img src={data.productImage} alt="img" />
-                <h5>{data.productName}</h5>
+                <h5 style={{ fontFamily: "cursive" }}>{data.productName}</h5>
               </Link>
             </div>
           );
