@@ -12,7 +12,9 @@ const CartItem = ({ data }) => {
         <p>
           <b>{productName}</b>
         </p>
-        <p className="price">Rs {price}</p>
+        <p className="price" style={{ fontFamily: "monospace" }}>
+          Rs {price}
+        </p>
         <div className="countHandler">
           <button onClick={() => removeFromCart(id)}>-</button>
           <input

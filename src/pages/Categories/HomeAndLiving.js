@@ -48,7 +48,7 @@ const HomeAndLiving = () => {
                       <p>
                         <b>{data.productName}</b>
                       </p>
-                      <p>Rs {data.price}</p>
+                      <p style={{ fontFamily: "monospace" }}>Rs {data.price}</p>
                     </div>
                   </Link>
                   <Button

@@ -24,7 +24,7 @@ const Cart = () => {
       </div>
       {totalAmount > 0 ? (
         <div className="checkout">
-          <p className="total">Subtotal: Rs {totalAmount}</p>
+          <p className="total">Total: Rs {totalAmount}</p>
           <button onClick={() => navigate("/")}>Continue Shopping</button>
         </div>
       ) : (
