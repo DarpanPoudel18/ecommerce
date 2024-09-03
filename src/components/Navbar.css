@@ -8,6 +8,8 @@
     align-items: center;
     gap:70px;
     background-color: #007185;
+    /* background-color: #F85606; */
+    /* background-color: #4096FF; */
   overflow: hidden;
  
   }
@@ -87,9 +89,9 @@ border:6px dotted orange;
     gap:1.5vw;
     /* padding:6px 0; */
     justify-content: center;
-    border:2px solid black;
+    /* border:2px solid black; */
     border-radius: 8px;
-    background-color: black;
+    /* background-color: black; */
   }
   
   .links a {
