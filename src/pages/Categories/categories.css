@@ -48,7 +48,7 @@
       }
 
       .close-btn{
-        display:none;
+        display: none;
       }
 
 /****************************** electronics **********************/
@@ -60,7 +60,7 @@
  justify-content: center;
  align-items: center;
  gap:4rem;
- /* border:2px solid red; */
+
 }
 
 
@@ -102,24 +102,7 @@
   }
 
 
-  /* .addToCartBttn {
-    background-color: transparent;
-    border: 2px solid rgb(19, 19, 19);
-    min-width: 100px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 15px;
-   
-   
-  } */
-  
-  /* .addToCartBttn:hover {
-    background-color: rgb(19, 19, 19);
-    color: white;
-    cursor: pointer;
-  }  */
+ 
 
 /******************  home and living ********************/
 .homeandliving{
@@ -420,8 +403,6 @@ border:2px solid whitesmoke;
     width:100%;
     height:100%;
     display:flex;
-    /* flex-direction: column; */
-    /* gap:2rem; */
     position: relative;
   }
 
@@ -439,7 +420,7 @@ border:2px solid whitesmoke;
 
 
 /* new code on 9/3/2024 */
-/* General styles */
+
 .categories {
   padding: 10px;
   background-color: #f8f9fa;
@@ -447,7 +428,6 @@ border:2px solid whitesmoke;
 
 .cat-links {
   display: flex;
-  /* flex-direction: col; */
   justify-content: space-around;
 }
 
@@ -515,9 +495,6 @@ border:2px solid whitesmoke;
     color: white;
     padding: 15px 0;
     border-bottom: 1px solid #495057;
-  
-    /* display: flex; */
-    /* text-align: center; */
   }
 
   .cat-links a:hover {
